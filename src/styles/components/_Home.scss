@@ -1,0 +1,140 @@
+.home__container {
+  position: relative;
+  color: $grey;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+
+  nav {
+    padding: 1rem;
+    h3 {
+      font-size: 0.9rem;
+      color: $fuschia;
+    }
+  }
+}
+
+.home__container-elements {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 70vh; */
+  flex-direction: column;
+}
+
+.home__title {
+  font-size: 0.6rem;
+  padding: 1rem;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -2rem;
+
+  span {
+    color: $fuschia;
+    font-size: 1.6rem;
+  }
+}
+
+.home__button-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  button {
+    padding: 0.8rem 1.5rem;
+    display: block;
+    border-radius: 10px;
+    color: $grey;
+    background: $blue;
+    margin: 0 0.5rem;
+    border: none;
+    box-shadow: 0 0 5px darken($fuschia, 20);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 20px darken($fuschia, 10);
+      background: darken($blue, 10);
+    }
+  }
+}
+
+.home__img {
+  position: absolute;
+  width: 30%;
+  height: 55%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  background-color: $blue;
+  border-start-start-radius: 50%;
+  border-start-end-radius: 50%;
+  padding: 0.5rem;
+
+  .home__circle {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home__img {
+    width: 80%;
+
+    img {
+      width: 75% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .home__img {
+    width: 70%;
+
+    img {
+      width: 68% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .home__img {
+    width: 70%;
+
+    img {
+      width: 60% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .home__img {
+    width: 60%;
+
+    img {
+      width: 60% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home__img {
+    width: 30%;
+
+    img {
+      width: 80% !important;
+    }
+  }
+}

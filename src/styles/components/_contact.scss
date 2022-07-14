@@ -1,0 +1,114 @@
+.header-title {
+  text-align: center;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  .sidebar-card {
+    background-color: $fuschia;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 1.4rem;
+    }
+
+    .sidebar-card-title {
+      font-size: 1rem;
+      padding: 0.3rem;
+      font-weight: 700;
+    }
+
+    .sidebar-card-info {
+      font-size: 0.7rem;
+      margin: 0.3rem 0;
+    }
+
+    a {
+      font-size: 0.8rem;
+      color: $grey;
+      text-decoration: none;
+
+      i {
+        font-size: 0.7rem;
+        margin-left: 0.2rem;
+        transition: margin-left 0.4s ease;
+      }
+    }
+    a:hover {
+      color: #333;
+    }
+    a:hover i {
+      margin-left: 0.5rem;
+      color: #333;
+    }
+  }
+}
+
+.form-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: thin solid $grey;
+      outline: none;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+      border: thin solid $grey;
+      background: $fuschia;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-contact {
+    flex-direction: column;
+  }
+
+  .form-contact {
+    width: 80%;
+  }
+
+  .sidebar {
+    width: 70%;
+  }
+}
