@@ -13,7 +13,7 @@ export const Port_Router = () => {
     <>
       <Routes>
         <Route
-          path="*"
+          path="/portfolio-wilfredo/*"
           element={
             <LayoutPort>
               <Home />
