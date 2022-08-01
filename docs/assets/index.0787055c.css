@@ -756,7 +756,7 @@ body {
 }
 .skills__container .section-frontend {
   position: relative;
-  background-image: url(./assets/1.c7eccc02.webp) !important;
+  background-image: url(assets/1.c7eccc02.webp) !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -774,7 +774,7 @@ body {
 }
 .skills__container .section-backend {
   position: relative;
-  background-image: url(./assets/2.3ae74e98.jpg) !important;
+  background-image: url(assets/2.3ae74e98.jpg) !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
