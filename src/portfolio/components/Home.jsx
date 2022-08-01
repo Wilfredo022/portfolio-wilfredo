@@ -5,6 +5,29 @@ export const Home = () => {
         <h3>Wilfredo Zapata</h3>
       </nav>
 
+      <div className="home__links-social">
+        <div className="home__links-social-networks">
+          <a href="https://github.com/Wilfredo022" target="_blank">
+            <i className="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div className="home__links-social-networks">
+          <a href="https://www.linkedin.com/in/wil3a8a36246/" target="_blank">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <div className="home__links-social-networks">
+          <a
+            href="https://www.facebook.com/wilfredo.zapata.7967"
+            target="_blank"
+          >
+            <i className="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
       <div className="home__container-elements animate__animated animate__slideInUp">
         <div className="home__title">
           <h2>

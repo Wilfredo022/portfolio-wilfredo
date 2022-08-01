@@ -81,14 +81,14 @@ export const Contact = () => {
               Write me <i className="fas fa-arrow-right"></i>
             </a>
           </div>
-          {/* <div className="sidebar-card">
+          <div className="sidebar-card">
             <i className="fab fa-linkedin"></i>
             <p className="sidebar-card-title">LinkedIn</p>
-            <p className="sidebar-card-info">???</p>
-            <a href="">
+            <p className="sidebar-card-info">linkedin.com/in/wil3a8a36246/</p>
+            <a href="https://www.linkedin.com/in/wil3a8a36246/" target="_blank">
               Write me <i className="fas fa-arrow-right"></i>
             </a>
-          </div> */}
+          </div>
           <div className="sidebar-card">
             <i className="fab fa-facebook-messenger"></i>
             <p className="sidebar-card-title">Messenger</p>

@@ -15,6 +15,40 @@
   }
 }
 
+.home__links-social {
+  position: absolute;
+  right: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  z-index: 2;
+
+  .home__links-social-networks {
+    width: 50px;
+    height: 50px;
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: darken($fuschia, 10);
+    }
+
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $grey;
+    }
+  }
+}
+
 .home__container-elements {
   position: relative;
   display: flex;
@@ -56,9 +90,13 @@
     transition: all 0.3s ease;
 
     &:hover {
+      background-color: darken($fuschia, 10);
+    }
+
+    /* &:hover {
       box-shadow: 0 0 20px darken($fuschia, 10);
       background: darken($blue, 10);
-    }
+    } */
   }
 }
 
@@ -124,6 +162,17 @@
     }
   }
 
+  .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   .home__img {
     width: 70% !important;
     max-width: 350px;
@@ -152,6 +201,19 @@
     button {
       font-size: 2.5rem;
       padding: 1rem 2.5rem;
+    }
+  }
+
+  .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      width: 70px !important;
+      height: 70px !important;
+      a {
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -186,6 +248,19 @@
       padding: 1rem 2rem;
     }
   }
+
+  /* .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      width: 90px;
+      height: 90px;
+      a {
+        font-size: 2rem;
+      }
+    }
+  } */
 
   .home__img {
     width: 55% !important;
@@ -251,6 +326,19 @@
     }
   }
 
+  .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      width: 90px;
+      height: 90px;
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+
   .home__img {
     width: 55% !important;
     max-width: 500px !important;
@@ -281,6 +369,10 @@
       padding: 1.5rem 2.5rem;
       border-radius: 50px;
     }
+  }
+
+  .home__links-social {
+    display: flex;
   }
 
   .home__img {

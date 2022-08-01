@@ -50,22 +50,29 @@
     }
 
     a {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0.3rem;
+      border: thin solid transparent;
+      padding: 0.5rem;
       color: $grey;
       text-decoration: none;
+      border-radius: 5px;
 
       i {
+        display: inline;
         font-size: 0.7rem;
-        margin-left: 0.2rem;
+        margin-left: 0.5rem;
         transition: margin-left 0.4s ease;
       }
     }
     a:hover {
-      color: #333;
+      border: thin solid $grey;
     }
     a:hover i {
       margin-left: 0.5rem;
-      color: #333;
     }
   }
 }
@@ -166,11 +173,11 @@
       }
 
       a {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
 
         i {
-          font-size: 1rem;
-          margin-left: 0.2rem;
+          font-size: 1.2rem;
+          margin-left: 0.5rem !important;
           transition: margin-left 0.4s ease;
         }
       }
@@ -216,11 +223,11 @@
       }
 
       a {
-        font-size: 1rem;
+        font-size: 0.9rem;
 
         i {
-          font-size: 1rem;
-          margin-left: 0.2rem;
+          font-size: 0.9rem;
+          margin-left: 0.4rem !important;
           transition: margin-left 0.4s ease;
         }
       }

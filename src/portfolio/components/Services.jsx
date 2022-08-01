@@ -10,14 +10,17 @@ export const Services = () => {
 
         <div className="services__container-card">
           <div className="services__card">
+            <i className="fas fa-lightbulb"></i>
             <h3>Dynamic and static Web pages</h3>
           </div>
 
           <div className="services__card">
+            <i className="fas fa-disease"></i>
             <h3>Web applications</h3>
           </div>
 
           <div className="services__card">
+            <i className="fas fa-cogs"></i>
             <h3>Maintenance of web pages</h3>
           </div>
         </div>

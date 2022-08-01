@@ -22,6 +22,7 @@
   }
 
   .services__container-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +30,7 @@
     margin-top: 1rem;
 
     .services__card {
+      position: relative;
       display: block;
       background: darken($fuschia, 15);
       width: 80%;
@@ -39,6 +41,14 @@
       align-items: center;
       margin: 0.3rem;
       border-radius: 10px;
+
+      i {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 3rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
 
       h3 {
         text-align: center;
@@ -55,6 +65,14 @@
       padding: 1rem;
       width: 100% !important;
       margin-bottom: 2rem !important;
+
+      i {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 4.5rem !important;
+        color: rgba(255, 255, 255, 0.5);
+      }
 
       h2 {
         font-size: 1.6rem;
@@ -80,6 +98,14 @@
       padding: 1rem;
       width: 100% !important;
 
+      i {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 4rem !important;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
       h2 {
         font-size: 2rem;
       }
@@ -102,6 +128,14 @@
     .services__container-info {
       padding: 1rem;
       width: 100% !important;
+
+      i {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 4rem !important;
+        color: rgba(255, 255, 255, 0.5);
+      }
 
       h2 {
         font-size: 1.5rem !important;
@@ -132,6 +166,14 @@
       align-items: center;
       min-height: 80vh;
 
+      i {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 5.5rem !important;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
       h2 {
         font-size: 1.7rem !important;
       }
@@ -161,6 +203,14 @@
       align-items: center;
       min-height: 80vh;
 
+      i {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 7rem !important;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
       h2 {
         font-size: 2.3rem !important;
       }
@@ -189,6 +239,14 @@
       display: flex;
       align-items: center;
       min-height: 80vh;
+
+      i {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 9rem !important;
+        color: rgba(255, 255, 255, 0.5);
+      }
 
       h2 {
         font-size: 3rem !important;
