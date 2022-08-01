@@ -1,4 +1,10 @@
+import ImgWmovies from "../../assets/projects/wmovies.webp";
+
 export const Projects = () => {
+  const styleWmovies = {
+    backgroundImage: `url(${ImgWmovies})`,
+  };
+
   return (
     <div className="container-secction animate__animated animate__slideInUp">
       <h1 className="title">Projects</h1>
@@ -6,7 +12,7 @@ export const Projects = () => {
       <div className="projects__container">
         <div className="projects__card">
           <div className="projects__card-img">
-            <div className="wmovies"></div>
+            <div className="wmovies" style={styleWmovies}></div>
           </div>
           <div className="projects__card-info">
             <h2>Wmovies</h2>

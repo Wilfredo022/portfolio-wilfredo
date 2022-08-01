@@ -1,8 +1,22 @@
+import imgFront from "../../assets/skills/1.webp";
+import imgBack from "../../assets/skills/2.jpg";
+
 export const Skills = () => {
+  const styleFront = {
+    backgroundImage: `url(${imgFront})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+  };
+
+  const styleBack = {
+    backgroundImage: `url(${imgBack})`,
+  };
+
   return (
     <div className="container-section animate__animated animate__slideInUp">
       <div className="skills__container">
-        <section className="section-frontend">
+        <section className="section-frontend" style={styleFront}>
           <h3>Frontend</h3>
           <div className="section-skills">
             <h4>
@@ -29,7 +43,7 @@ export const Skills = () => {
           </div>
         </section>
 
-        <section className="section-backend">
+        <section className="section-backend" style={styleBack}>
           <h3>Backend</h3>
           <div className="section-skills">
             <h4>

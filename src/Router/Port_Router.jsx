@@ -22,7 +22,7 @@ export const Port_Router = () => {
         />
 
         <Route
-          path="services"
+          path="/services"
           element={
             <LayoutPort>
               <Services />
@@ -31,7 +31,7 @@ export const Port_Router = () => {
         />
 
         <Route
-          path="skills"
+          path="/skills"
           element={
             <LayoutPort>
               <Skills />
@@ -40,7 +40,7 @@ export const Port_Router = () => {
         />
 
         <Route
-          path="projects"
+          path="/projects"
           element={
             <LayoutPort>
               <Projects />
@@ -48,7 +48,7 @@ export const Port_Router = () => {
           }
         />
         <Route
-          path="contact"
+          path="/contact"
           element={
             <LayoutPort>
               <Contact />
