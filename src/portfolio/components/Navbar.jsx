@@ -26,8 +26,8 @@ export const Navbar = () => {
       </div>
 
       <div className="container">
-        <NavLink to="/studies">
-          <i className="fas fa-laptop-code"></i>
+        <NavLink to="/services">
+          <i className="fa-solid fa-laptop-code"></i>
         </NavLink>
         <span className="modal">Services</span>
       </div>

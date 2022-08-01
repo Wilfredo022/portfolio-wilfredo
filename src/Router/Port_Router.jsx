@@ -13,10 +13,19 @@ export const Port_Router = () => {
     <>
       <Routes>
         <Route
-          index
+          path="/*"
           element={
             <LayoutPort>
               <Home />
+            </LayoutPort>
+          }
+        />
+
+        <Route
+          path="services"
+          element={
+            <LayoutPort>
+              <Services />
             </LayoutPort>
           }
         />
@@ -35,14 +44,6 @@ export const Port_Router = () => {
           element={
             <LayoutPort>
               <Projects />
-            </LayoutPort>
-          }
-        />
-        <Route
-          path="studies"
-          element={
-            <LayoutPort>
-              <Services />
             </LayoutPort>
           }
         />

@@ -2,9 +2,16 @@
   text-align: center;
 }
 
+.container-secction {
+  padding: 1rem;
+  color: $grey;
+  width: 100%;
+}
+
 .container-contact {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 1rem;
 }
@@ -68,14 +75,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  margin-bottom: 5rem;
 
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 85%;
 
     input,
     textarea {
@@ -88,27 +96,322 @@
       resize: none;
     }
 
+    textarea {
+      height: 250px;
+    }
+
     button {
       width: 100%;
       padding: 1rem;
       margin-top: 1rem;
       border-radius: 5px;
       border: thin solid $grey;
-      background: $fuschia;
+      background-color: $fuschia;
+      color: $grey;
+      font-weight: bold;
+      transition: background-color 0.4s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($fuschia, 15);
+      }
     }
   }
 }
 
-@media screen and (max-width: 700px) {
-  .container-contact {
-    flex-direction: column;
+.send {
+  background-color: #00e676 !important;
+  color: #333 !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      margin-left: 0.5rem;
+    }
   }
 
-  .form-contact {
-    width: 80%;
+  &:hover {
+    background-color: darken(#00e676, 10) !important;
+  }
+}
+
+//todo mejorar media queries de mobile, tablet, tablet horizontal, laptop, entre otras
+
+@include tablet {
+  .container-contact {
+    display: flex;
+    flex-direction: column !important;
   }
 
   .sidebar {
-    width: 70%;
+    width: 90%;
+    .sidebar-card {
+      i {
+        font-size: 1.5rem;
+      }
+
+      .sidebar-card-title {
+        font-size: 1.4rem !important;
+        padding: 0.3rem;
+      }
+
+      .sidebar-card-info {
+        font-size: 1.3rem !important;
+        margin: 0.3rem 0;
+      }
+
+      a {
+        font-size: 1.5rem !important;
+
+        i {
+          font-size: 1rem;
+          margin-left: 0.2rem;
+          transition: margin-left 0.4s ease;
+        }
+      }
+    }
+  }
+
+  .form-contact {
+    max-width: 700px !important;
+    form {
+      width: 90% !important;
+
+      input,
+      textarea {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    button {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@include tablet-horizontal {
+  .container-contact {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    .sidebar-card {
+      i {
+        font-size: 1.5rem;
+      }
+
+      .sidebar-card-title {
+        font-size: 1.3rem;
+        padding: 0.3rem;
+      }
+
+      .sidebar-card-info {
+        font-size: 0.8rem;
+        margin: 0.3rem 0;
+      }
+
+      a {
+        font-size: 1rem;
+
+        i {
+          font-size: 1rem;
+          margin-left: 0.2rem;
+          transition: margin-left 0.4s ease;
+        }
+      }
+    }
+  }
+
+  .form-contact {
+    max-width: 600px;
+    form {
+      width: 80% !important;
+
+      input,
+      textarea {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    button {
+      font-size: 1.3rem;
+    }
+  }
+}
+@include laptop {
+  .container-contact {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    .sidebar-card {
+      i {
+        font-size: 1.3rem;
+      }
+
+      .sidebar-card-title {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+      }
+
+      .sidebar-card-info {
+        font-size: 0.8rem;
+        margin: 0.3rem 0;
+      }
+
+      a {
+        font-size: 0.9rem;
+
+        i {
+          font-size: 1rem;
+          margin-left: 0.2rem;
+          transition: margin-left 0.4s ease;
+        }
+      }
+    }
+  }
+
+  .form-contact {
+    max-width: 500px;
+    form {
+      width: 80% !important;
+
+      input,
+      textarea {
+        font-size: 1rem !important;
+      }
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+}
+@include desktop {
+  .header-title {
+    span {
+      font-size: 1.3rem !important;
+      margin-top: 2rem;
+    }
+  }
+  .container-contact {
+    flex-direction: row;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .sidebar {
+    .sidebar-card {
+      i {
+        font-size: 1.8rem;
+      }
+
+      .sidebar-card-title {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+      }
+
+      .sidebar-card-info {
+        font-size: 1.1rem;
+        margin: 0.3rem 0;
+      }
+
+      a {
+        font-size: 1.3rem;
+
+        i {
+          font-size: 1.3rem;
+          margin-left: 0.2rem;
+          transition: margin-left 0.4s ease;
+        }
+      }
+    }
+  }
+
+  .form-contact {
+    max-width: 800px;
+    form {
+      width: 80% !important;
+
+      input,
+      textarea {
+        font-size: 1.4rem !important;
+      }
+    }
+
+    button {
+      font-size: 1.4rem;
+    }
+  }
+}
+@include desktop-big {
+  .header-title {
+    span {
+      font-size: 1.6rem !important;
+      margin-top: 2rem;
+    }
+  }
+  .container-contact {
+    flex-direction: row;
+    margin-bottom: 4rem;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .sidebar {
+    .sidebar-card {
+      i {
+        font-size: 2.5rem;
+      }
+
+      .sidebar-card-title {
+        font-size: 2.2rem;
+        padding: 0.3rem;
+      }
+
+      .sidebar-card-info {
+        font-size: 1.5rem;
+        margin: 0.3rem 0;
+      }
+
+      a {
+        font-size: 1.8rem;
+
+        i {
+          font-size: 1.6rem;
+          margin-left: 0.2rem;
+          transition: margin-left 0.4s ease;
+        }
+      }
+    }
+  }
+
+  .form-contact {
+    max-width: 1000px;
+    form {
+      width: 80% !important;
+
+      input,
+      textarea {
+        font-size: 1.9rem !important;
+      }
+
+      textarea {
+        height: 450px;
+      }
+    }
+
+    button {
+      font-size: 1.9rem;
+    }
   }
 }

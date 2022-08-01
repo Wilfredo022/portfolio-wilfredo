@@ -1,8 +1,6 @@
 export const Skills = () => {
   return (
-    <div className="container-secction animate__animated animate__slideInUp">
-      <h1 className="title">My habilities</h1>
-
+    <div className="container-section animate__animated animate__slideInUp">
       <div className="skills__container">
         <section className="section-frontend">
           <h3>Frontend</h3>
@@ -26,7 +24,7 @@ export const Skills = () => {
               <i className="fas fa-check-circle"></i> React / Redux
             </h4>
             <h4>
-              <i className="fas fa-check-circle"></i> Git
+              <i className="fas fa-check-circle"></i> Git / Github
             </h4>
           </div>
         </section>

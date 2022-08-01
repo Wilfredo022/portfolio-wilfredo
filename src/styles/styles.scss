@@ -1,8 +1,11 @@
 @import "./base/settings";
 @import "./base/variables";
+@import "./base/mixins";
 //components
 @import "./components/layoutPort";
 @import "./components/Nav";
 @import "./components/Home";
+@import "./components/projects";
 @import "./components/skills";
+@import "./components/services";
 @import "./components/contact";

@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Home = () => {
   return (
     <div className="home__container">
@@ -16,8 +14,6 @@ export const Home = () => {
 
         <div className="home__button-cv">
           <button type="">Download CV</button>
-
-          <button type="">About me</button>
         </div>
       </div>
       <div className="home__img animate__animated animate__slideInUp">
