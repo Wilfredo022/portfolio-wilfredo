@@ -1,8 +1,6 @@
-import ImgWmovies from "../../assets/projects/wmovies.webp";
-
 export const Projects = () => {
   const styleWmovies = {
-    backgroundImage: `url(${ImgWmovies})`,
+    backgroundImage: `url("https://i.ibb.co/7Nq485Z/wmovies.webp")`,
   };
 
   return (

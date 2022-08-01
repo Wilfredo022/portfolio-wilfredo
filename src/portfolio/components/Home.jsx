@@ -1,5 +1,3 @@
-import ImgUser from "../../../img/user.png";
-
 export const Home = () => {
   return (
     <div className="home__container">
@@ -20,7 +18,12 @@ export const Home = () => {
       </div>
       <div className="home__img animate__animated animate__slideInUp">
         <div className="home__circle">
-          <img src={ImgUser} alt="user" width="150px" height="150px" />
+          <img
+            src="https://i.ibb.co/M9qsMct/user.png"
+            alt="user"
+            width="150px"
+            height="150px"
+          />
         </div>
       </div>
     </div>

@@ -1,16 +1,13 @@
-import imgFront from "../../assets/skills/1.webp";
-import imgBack from "../../assets/skills/2.jpg";
-
 export const Skills = () => {
   const styleFront = {
-    backgroundImage: `url(${imgFront})`,
+    backgroundImage: `url("https://i.ibb.co/xmvtJZG/1.webp")`,
     backgroundSize: "cover",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
   };
 
   const styleBack = {
-    backgroundImage: `url(${imgBack})`,
+    backgroundImage: `url("https://i.ibb.co/gVtyvTd/2.jpg")`,
   };
 
   return (
