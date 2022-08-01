@@ -13,7 +13,15 @@ export const Port_Router = () => {
     <>
       <Routes>
         <Route
-          path="/*"
+          path="*"
+          element={
+            <LayoutPort>
+              <Home />
+            </LayoutPort>
+          }
+        />
+        <Route
+          path="/"
           element={
             <LayoutPort>
               <Home />

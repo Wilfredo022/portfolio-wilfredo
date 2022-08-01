@@ -72,8 +72,8 @@
   right: 0px;
   margin: 0 auto;
   background-color: $blue;
-  border-start-start-radius: 50%;
-  border-start-end-radius: 50%;
+  border-start-start-radius: 50% !important;
+  border-start-end-radius: 50% !important;
   padding: 0.5rem;
 
   .home__circle {
