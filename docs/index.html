@@ -2,10 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.88882dc9.png"
+    />
     <link
       rel="icon"
-      type="image/svg+xml"
-      href="./assets/favicon.17e50649.svg"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA81JREFUWEftl21MW2UUx38tbSmlvA1W3gdjOvZhGRlgNkCCS6awYdbMRFl8+eCyxZcPi9EYF8WEBV2I3zRKQjRmMS7GRI3ANoVsATe24IDJ8CXDGkPLaIvlrUUoLeVec2+lUFsozgT8wPPpPuf+n3P+z/+c59z7KOoQlVp4HXgRSGd9hg1onIOzigbEWqB+feKGRHlTImBdx53/k4FNIiBu0O7lsJsENhUIq4B++zyFZ8bkIrn7TSy/fxYfUqeGUje7np+S7ZZmPUNfxoVg8mpcZFXPyPb+t5Jx/aoJwYQloFCJGHvNqOMExvq0dDyREbKw6KyDvJpp2e7o1tL5VCjmwOdWUorn8M0qaC7KRfAq1kZAQpU2jpJZOYPgg+a9ufhmlUGLq7ss6NJ9sk1y3FyUE4RR6QSMt8wo1SLWyzquP5cW9rSvWIR5x1wUve1Pw7Xjadi/0wUcJOR7eeTS3SCHXSfSsHUsYdIqZin/2C5j+mpTwqZx1T6gy/RRfdUiOxj8MIGBhuRAwPyTU+w5PYEwr0ChFFFEgelcAv31S5g9p8fJP+kEES6Ub8NtU/07BSR0Zfsw8TvmmfwpmsvGzICDik+tGErmGL0egypGILnQg+s3NW2V2QHMweYRknZ7cA5qaD+cFTb4qgpILwtqx9n5rBNRgJbiHLzOKFSxAsY+f26lHUvz3S9PygEulG3DbVehSVzgSI8ZhRLuNCXy4ztb7o3A8jzeeCGVkfZYMg7OUNY0Kju8dCBbPikPt4zI857XtjL0RZxcvFIRS6PzWDqOnph7IxClFTHeGiIqWsT0STz9Z1IorHew48lpXCY1bVXZoIBHb5iJMSxgadXz/UsG9taNcd8zLrwupaycuBB6/BYZRWzF5edspJW7cZrUtFdlc/iqhdhMH4NNiQz8LW1xg4Ptj0/jGY+iZV8OlW3+2hm+GEv3qdQVdx+xBiTAzuNTFLwxIVdz59PpPHRe+pmBjpoMxnq18nNW1Z+UfPCH/Nx1IpUHP/LLf/PVrZi/Cu2QyxlFVCD+fi+V3/rP/MTtaLYUePBMKmndtyStWi9wpHcIpRqm7mhI3OWVC7d1f46symojIgFp8fKuJ83NX+u5+YohyG/FeSuG/XMB28RANFeOLh3dlUisicDyvi856j5lYPiiPsjnYnNaNP78XhK/vJu06u7XVANyjg/NUPK+P6/CPLQ8kMv8dPC3YXmqJNyVxzKYuO2vkf+cAnW8QFmTHQRwmjT8UJcS1mdpox0Ju+BW0iV9fIRI4Tf/CTcV+J8osOFXs429nG709fwvCI+UrvN16woAAAAASUVORK5CYII="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAZxJREFUOE9j7GD4X8fAwFDNwMDAxkAa+MXAwNDK2MHw/ycZmmFW/QIZ8J80i1FVU88AZs5/DK6bnzJcbBVmeL6fC2yN+YRXDGx8fxkOJ0mC+ZIO3xj0a98y7PGTZvjzlQkshuICx1XPGD5cY2M43yDCwML1j8Hv7EMGJpb/DJst5Bl+vmVmMGx4wyCo/ZNhX6g03B8oBmjmvGeQ8/3CsNNdlkHS6SuDWfdrBkZmBoZztSIMjzbzMLjvfMzwaBMPw/WpgtgNENL/yeC89inDZks5Bs2cDwysvP8YmNn+g517uVeQwffYI4bd/tIMH66yYzeAkYmBwffUA4bzTSIMOkXvGK50CzEwc/5n0Cl8z3CpS4hBr+ItwxYreQYGpHjDiAXzCS8ZOCX+Mggb/mDYZKrAwMz+j8Hn+COGdxfYGT7dZmM4UymKEo8YBsgHfQb7/dVxDoaDMVJgxS4bnzAI6vxiOJYlzvB0Jzd+AzjE/jI4rX7KcGOGAMO95XxgxeppHxiUIj4x7PaTYfjzBRJ9MEC9hERucqZKZqIoOwMAL/+fYz/FamEAAAAASUVORK5CYII="
+    />
+    <link
+      rel="manifest"
+      href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0="
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -28,8 +45,8 @@
     />
 
     <title>Website Wilfredo</title>
-    <script type="module" crossorigin src="./assets/index.dd2c8d23.js"></script>
-    <link rel="stylesheet" href="./assets/index.0df31fc9.css" />
+    <script type="module" crossorigin src="./assets/index.5d7cfb26.js"></script>
+    <link rel="stylesheet" href="./assets/index.fefde1fa.css" />
   </head>
   <body>
     <div id="root"></div>

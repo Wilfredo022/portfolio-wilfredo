@@ -89,6 +89,12 @@
     font-size: 90%;
     transition: all 0.3s ease;
 
+    a {
+      text-decoration: none;
+      color: $grey;
+      padding: 0.5rem;
+    }
+
     &:hover {
       background-color: darken($fuschia, 10);
     }

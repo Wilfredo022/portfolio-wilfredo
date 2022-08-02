@@ -36,7 +36,15 @@ export const Home = () => {
         </div>
 
         <div className="home__button-cv">
-          <button type="">Download CV</button>
+          <button type="">
+            <a
+              href="https://drive.google.com/file/d/1l-VRGTNLZwHjLd_zVHU01LQxUYDS4FYg/view?usp=sharing"
+              download="CV-WilfredoZapata.pdf"
+              target="_blank"
+            >
+              Download CV
+            </a>
+          </button>
         </div>
       </div>
       <div className="home__img animate__animated animate__slideInUp">
