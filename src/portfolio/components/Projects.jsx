@@ -31,7 +31,7 @@ export const Projects = () => {
               See
             </a>
 
-            <a href="https://wilmovies.netlify.app/" target="_blank">
+            <a href="https://github.com/Wilfredo022/wmovies" target="_blank">
               Github
             </a>
           </div>
