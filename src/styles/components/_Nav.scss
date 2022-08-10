@@ -215,16 +215,16 @@
 }
 @include desktop {
   .nav-container {
-    max-width: 500px;
+    max-width: 600px;
     padding: 0.5rem;
   }
 
   .container {
     a {
-      padding: 1.9rem;
+      padding: 2.5rem;
 
       i {
-        font-size: 1.7rem;
+        font-size: 2rem;
       }
     }
   }
@@ -236,19 +236,21 @@
 
   .active {
     i {
-      font-size: 1.7rem !important;
+      font-size: 2rem !important;
     }
   }
 }
+
 @include desktop-big {
   .nav-container {
-    max-width: 700px;
-    padding: 0.8rem;
+    width: 95% !important;
+    max-width: 700px !important;
+    padding: 0.4rem !important;
   }
 
   .container {
     a {
-      padding: 2.5rem;
+      padding: 2.7rem;
 
       i {
         font-size: 2.5rem;
