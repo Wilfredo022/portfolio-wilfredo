@@ -30,7 +30,7 @@ export const Port_Router = () => {
         />
 
         <Route
-          path="portfolio-wilfredo/services/*"
+          path="/services/*"
           element={
             <LayoutPort>
               <Services />
@@ -64,7 +64,7 @@ export const Port_Router = () => {
           }
         />
         <Route
-          path="*"
+          path="/*"
           element={
             <LayoutPort>
               <Home />
