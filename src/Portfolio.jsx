@@ -1,12 +1,14 @@
 import { Port_Router } from "./Router/Port_Router";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 export const Portfolio = () => {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
+      <HashRouter>
         <Port_Router />
-      </BrowserRouter>
+      </HashRouter>
+      {/* </BrowserRouter> */}
     </>
   );
 };

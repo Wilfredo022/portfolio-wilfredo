@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <nav className="nav-container">
       <div className="container">
-        <NavLink to="/portfolio-wilfredo/">
+        <NavLink to="/">
           <i className="fas fa-house"></i>
         </NavLink>
 
