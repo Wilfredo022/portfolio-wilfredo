@@ -38,7 +38,7 @@ export const Home = () => {
         <div className="home__button-cv">
           <button type="">
             <a
-              href="https://drive.google.com/file/d/19MlZbC33YdXBbz0ZyLFe6oICsYgPt7LE/view"
+              href="https://drive.google.com/file/d/1MoI1gz8V89h-sL5yS1Ft1lmsEah5F_XS/view"
               download="CV-WilfredoZapata.pdf"
               target="_blank"
             >
