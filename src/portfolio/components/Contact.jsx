@@ -63,13 +63,13 @@ export const Contact = () => {
   return (
     <div className="container-secction animate__animated animate__slideInUp">
       <div className="header-title">
-        <span>Get in touch</span>
-        <h1 className="title">Contact me</h1>
+        {/* <span>Get in touch</span> */}
+        <h1 className="title">Contáctame!</h1>
       </div>
 
       <div className="container-contact">
         <div className="sidebar">
-          <h3>Talk to me</h3>
+          <h3>Háblame </h3>
           <div className="sidebar-card">
             <i className="fas fa-envelope"></i>
             <p className="sidebar-card-title">Email</p>
@@ -78,7 +78,7 @@ export const Contact = () => {
               href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlHCwfFqrKbHqBFQrcjZjvKPlglcNKThcGjHlznfRnVMglTQWNXcrdWGGxnRdVfxlDrLV"
               target="_blank"
             >
-              Write me <i className="fas fa-arrow-right"></i>
+              Escríbeme! <i className="fas fa-arrow-right"></i>
             </a>
           </div>
           <div className="sidebar-card">
@@ -86,7 +86,7 @@ export const Contact = () => {
             <p className="sidebar-card-title">LinkedIn</p>
             <p className="sidebar-card-info">linkedin.com/in/wil3a8a36246/</p>
             <a href="https://www.linkedin.com/in/wil3a8a36246/" target="_blank">
-              Write me <i className="fas fa-arrow-right"></i>
+              Escríbeme! <i className="fas fa-arrow-right"></i>
             </a>
           </div>
           <div className="sidebar-card">
@@ -100,20 +100,20 @@ export const Contact = () => {
               target="_blank"
               referrer="noreferrer"
             >
-              Write me <i className="fas fa-arrow-right"></i>
+              Escríbeme! <i className="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
         <div className="form-contact">
-          <h3>Write me your project</h3>
+          <h3>Háblame de tu proyecto</h3>
           <form
             action="https://formsubmit.co/aguszapata2000@gmail.com"
             method="POST"
           >
             <input
               type="text"
-              placeholder="Insert your name"
+              placeholder="Escribe tu nombre"
               name="name"
               id="name"
               autoComplete="off"
@@ -124,7 +124,7 @@ export const Contact = () => {
 
             <input
               type="email"
-              placeholder="Insert your Email"
+              placeholder="Escribe tu Email"
               name="email"
               id="email"
               autoComplete="off"
@@ -135,7 +135,7 @@ export const Contact = () => {
 
             <textarea
               type="text"
-              placeholder="Write your Project"
+              placeholder="Háblame de tu proyecto"
               name="message"
               id="message"
               autoComplete="off"
@@ -147,10 +147,10 @@ export const Contact = () => {
             {/*//TODO: cambiar el color al enviar los datos */}
             <button className={valor} onClick={(e) => handleSubmit(e)}>
               {valor != "send" ? (
-                "Send"
+                "Enviar"
               ) : (
                 <span>
-                  Message sent<i className="fa-solid fa-paper-plane"></i>
+                  Mensaje enviado <i className="fa-solid fa-paper-plane"></i>
                 </span>
               )}
             </button>

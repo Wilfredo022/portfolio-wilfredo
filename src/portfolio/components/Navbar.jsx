@@ -8,35 +8,35 @@ export const Navbar = () => {
           <i className="fas fa-house"></i>
         </NavLink>
 
-        <span className="modal">Home</span>
+        <span className="modal">Inicio</span>
       </div>
 
       <div className="container">
         <NavLink to="/skills">
           <i className="fas fa-code"></i>
         </NavLink>
-        <span className="modal">Skills</span>
+        <span className="modal">Habilidades</span>
       </div>
 
       <div className="container">
         <NavLink to="/projects">
           <i className="fas fa-briefcase"></i>
         </NavLink>
-        <span className="modal">Projects</span>
+        <span className="modal">Proyectos</span>
       </div>
 
       <div className="container">
         <NavLink to="/services">
           <i className="fa-solid fa-laptop-code"></i>
         </NavLink>
-        <span className="modal">Services</span>
+        <span className="modal">Servicios</span>
       </div>
 
       <div className="container">
         <NavLink to="/contact">
           <i className="fas fa-address-book"></i>
         </NavLink>
-        <span className="modal">Contact</span>
+        <span className="modal">Contacto</span>
       </div>
     </nav>
   );

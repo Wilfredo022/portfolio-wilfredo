@@ -31,7 +31,8 @@ export const Home = () => {
       <div className="home__container-elements animate__animated animate__slideInUp">
         <div className="home__title">
           <h2>
-            Hi, I'm <br /> <span>Wilfredo</span> <br /> Frontend developer
+            Hola soy
+            <br /> <span>Wilfredo</span> <br /> Frontend developer
           </h2>
         </div>
 
@@ -42,7 +43,7 @@ export const Home = () => {
               download="CV-WilfredoZapata.pdf"
               target="_blank"
             >
-              Download CV
+              Resumen CV
             </a>
           </button>
         </div>
