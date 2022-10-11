@@ -39,8 +39,7 @@ export const Home = () => {
         <div className="home__button-cv">
           <button type="">
             <a
-              href="https://drive.google.com/file/d/1MoI1gz8V89h-sL5yS1Ft1lmsEah5F_XS/view"
-              download="CV-WilfredoZapata.pdf"
+              href="https://drive.google.com/file/d/1awqezKeM8cZPpWJdQm91f6PP3ZWFn2xe/view"
               target="_blank"
             >
               Resumen CV
