@@ -81,7 +81,7 @@
   }
 }
 
-@include mobile {
+/* @include mobile {
   .nav-container {
     max-width: 280px;
     padding: 0.5rem;
@@ -108,7 +108,7 @@
       font-size: 1.2rem !important;
     }
   }
-}
+} */
 @include tablet-horizontal {
   .nav-container {
     max-width: 350px;

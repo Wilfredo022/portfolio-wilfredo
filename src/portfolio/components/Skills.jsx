@@ -1,4 +1,3 @@
-import imgCss from "/css.png";
 export const Skills = () => {
   const styleFront = {
     backgroundImage: `url("https://i.ibb.co/xmvtJZG/1.webp")`,
@@ -11,60 +10,92 @@ export const Skills = () => {
     backgroundImage: `url("https://i.ibb.co/gVtyvTd/2.jpg")`,
   };
 
+  const frontend = [
+    {
+      skill: "HTML5",
+      img: "./html.png",
+    },
+    {
+      skill: "CSS3",
+      img: "./css.png",
+    },
+    {
+      skill: "Sass",
+      img: "./sass.png",
+    },
+    {
+      skill: "Bootstrap",
+      img: "./bootstrap1.png",
+    },
+    {
+      skill: "Javascript",
+      img: "./js.png",
+    },
+    {
+      skill: "Typescript",
+      img: "./ts.png",
+    },
+    {
+      skill: "React",
+      img: "./react.png",
+    },
+    {
+      skill: "Redux",
+      img: "./redux.png",
+    },
+    {
+      skill: "Git",
+      img: "./git.png",
+    },
+    {
+      skill: "Github",
+      img: "./github1.png",
+    },
+  ];
+
+  const backend = [
+    {
+      skill: "Node.js",
+      img: "./node.png",
+    },
+    {
+      skill: "Express.js",
+      img: "./expresss.png",
+    },
+    {
+      skill: "Firebase",
+      img: "./firebase.png",
+    },
+  ];
+
   return (
     <div className="container-section animate__animated animate__slideInUp">
       <div className="skills__container">
         <section className="section-frontend" style={styleFront}>
           <h3>Frontend</h3>
           <div className="section-skills">
-            <div>
-              <h4>
-                <i className="fas fa-check-circle"></i> HTML5
-              </h4>
-              <img src={"./html.png"} alt="" width="100px" />
-            </div>
-            <div>
-              <h4>
-                <i className="fas fa-check-circle"></i> CSS3
-              </h4>
-              <img src={imgCss} alt="" width="100px" />
-            </div>
-            <h4>
-              <i className="fas fa-check-circle"></i> CSS / SASS
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> Javascript
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> Typescript
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> Jquery
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> Bootstrap
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> React / Redux
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> Git / Github
-            </h4>
+            {frontend.map((f) => {
+              return (
+                <div className="section-skill" key={f.skill}>
+                  <h4>{f.skill}</h4>
+                  <img src={f.img} alt={f.skill} width="60px" />
+                </div>
+              );
+            })}
           </div>
         </section>
 
         <section className="section-backend" style={styleBack}>
           <h3>Backend</h3>
           <div className="section-skills">
-            <h4>
-              <i className="fas fa-check-circle"></i> NodeJS
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> Express
-            </h4>
-            <h4>
-              <i className="fas fa-check-circle"></i> Firebase
-            </h4>
+            {backend.map((f) => {
+              return (
+                <div className="section-skill" key={f.skill}>
+                  <h4>{f.skill}</h4>
+                  <img src={f.img} alt={f.skill} width="60px" />
+                </div>
+              );
+            })}
           </div>
         </section>
       </div>

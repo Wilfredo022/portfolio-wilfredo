@@ -17,29 +17,18 @@
 
   section {
     flex-direction: column;
-    padding: 2rem;
-    width: 50%;
+    padding: 0.5rem;
+    width: 100%;
     height: 100vh;
     border: thin solid rgba(0, 0, 0, 0.2);
 
     h3 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.7em;
       border-bottom: thin solid $grey;
       border-radius: 1px;
-      margin-bottom: 1rem;
-      color: $grey;
-    }
-
-    h4 {
-      padding: 0.3rem;
-      font-weight: 500;
-
-      i {
-        color: $fuschia;
-        font-size: 1.1rem;
-        margin-right: 0.3rem;
-      }
+      margin-bottom: 0.4rem;
+      color: white;
     }
   }
 
@@ -82,7 +71,38 @@
   }
 }
 
-@include mobile {
+.section-skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .section-skill {
+    display: flex;
+    justify-content: top;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    height: 100px;
+    margin: 4px;
+    background-color: rgba(254, 254, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+
+    h4 {
+      font-size: 1em !important;
+      color: $black2;
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+}
+
+/* @include mobile {
   section {
     width: 100% !important;
 
@@ -100,7 +120,7 @@
       }
     }
   }
-}
+} */
 
 @include tablet {
   section {
@@ -128,26 +148,6 @@
 
     h3 {
       font-size: 2rem !important;
-    }
-
-    .section-skills {
-      h4 {
-        font-size: 1.3rem;
-
-        i {
-          font-size: 1.3rem;
-        }
-      }
-    }
-  }
-}
-
-@include laptop {
-  section {
-    width: 50% !important;
-
-    h3 {
-      font-size: 2.2rem !important;
     }
 
     .section-skills {
