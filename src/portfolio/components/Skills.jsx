@@ -1,4 +1,3 @@
-import imgHtml from "/html.png";
 import imgCss from "/css.png";
 export const Skills = () => {
   const styleFront = {
@@ -22,7 +21,7 @@ export const Skills = () => {
               <h4>
                 <i className="fas fa-check-circle"></i> HTML5
               </h4>
-              <img src={imgHtml} alt="" width="100px" />
+              <img src={"./html.png"} alt="" width="100px" />
             </div>
             <div>
               <h4>
