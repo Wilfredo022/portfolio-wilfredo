@@ -1,3 +1,5 @@
+import imgHtml from "/html.png";
+import imgCss from "/css.png";
 export const Skills = () => {
   const styleFront = {
     backgroundImage: `url("https://i.ibb.co/xmvtJZG/1.webp")`,
@@ -16,14 +18,26 @@ export const Skills = () => {
         <section className="section-frontend" style={styleFront}>
           <h3>Frontend</h3>
           <div className="section-skills">
-            <h4>
-              <i className="fas fa-check-circle"></i> HTML
-            </h4>
+            <div>
+              <h4>
+                <i className="fas fa-check-circle"></i> HTML5
+              </h4>
+              <img src={imgHtml} alt="" width="100px" />
+            </div>
+            <div>
+              <h4>
+                <i className="fas fa-check-circle"></i> CSS3
+              </h4>
+              <img src={imgCss} alt="" width="100px" />
+            </div>
             <h4>
               <i className="fas fa-check-circle"></i> CSS / SASS
             </h4>
             <h4>
               <i className="fas fa-check-circle"></i> Javascript
+            </h4>
+            <h4>
+              <i className="fas fa-check-circle"></i> Typescript
             </h4>
             <h4>
               <i className="fas fa-check-circle"></i> Jquery

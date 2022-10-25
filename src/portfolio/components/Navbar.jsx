@@ -5,7 +5,9 @@ export const Navbar = () => {
     <nav className="nav-container">
       <div className="container">
         <NavLink to="/">
-          <i className="fas fa-house"></i>
+          <span className="icon-nav">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
         </NavLink>
 
         <span className="modal">Inicio</span>
@@ -13,28 +15,36 @@ export const Navbar = () => {
 
       <div className="container">
         <NavLink to="/skills">
-          <i className="fas fa-code"></i>
+          <span className="icon-nav">
+            <ion-icon name="code-slash-outline"></ion-icon>
+          </span>
         </NavLink>
         <span className="modal">Habilidades</span>
       </div>
 
       <div className="container">
         <NavLink to="/projects">
-          <i className="fas fa-briefcase"></i>
+          <span className="icon-nav">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </span>
         </NavLink>
         <span className="modal">Proyectos</span>
       </div>
 
       <div className="container">
         <NavLink to="/services">
-          <i className="fa-solid fa-laptop-code"></i>
+          <span className="icon-nav">
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+          </span>
         </NavLink>
         <span className="modal">Servicios</span>
       </div>
 
       <div className="container">
         <NavLink to="/contact">
-          <i className="fas fa-address-book"></i>
+          <span className="icon-nav">
+            <ion-icon name="mail-outline"></ion-icon>
+          </span>
         </NavLink>
         <span className="modal">Contacto</span>
       </div>

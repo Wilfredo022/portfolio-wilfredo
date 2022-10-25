@@ -8,13 +8,17 @@ export const Home = () => {
       <div className="home__links-social">
         <div className="home__links-social-networks">
           <a href="https://github.com/Wilfredo022" target="_blank">
-            <i className="fab fa-github"></i>
+            <span>
+              <ion-icon name="logo-github"></ion-icon>
+            </span>
           </a>
         </div>
 
         <div className="home__links-social-networks">
           <a href="https://www.linkedin.com/in/wil3a8a36246/" target="_blank">
-            <i className="fab fa-linkedin-in"></i>
+            <span>
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </span>
           </a>
         </div>
 
@@ -23,7 +27,9 @@ export const Home = () => {
             href="https://www.facebook.com/wilfredo.zapata.7967"
             target="_blank"
           >
-            <i className="fab fa-facebook-f"></i>
+            <span>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </span>
           </a>
         </div>
       </div>
