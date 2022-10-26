@@ -11,17 +11,23 @@ export const Services = () => {
 
         <div className="services__container-card">
           <div className="services__card">
-            <i className="fas fa-lightbulb"></i>
+            <span>
+              <ion-icon name="bulb-outline"></ion-icon>
+            </span>
             <h3>Páginas web estáticas y dinámicas</h3>
           </div>
 
           <div className="services__card">
-            <i className="fas fa-disease"></i>
+            <span>
+              <ion-icon name="star-outline"></ion-icon>
+            </span>
             <h3>Aplicaciones web</h3>
           </div>
 
           <div className="services__card">
-            <i className="fas fa-cogs"></i>
+            <span>
+              <ion-icon name="cog-outline"></ion-icon>
+            </span>
             <h3>Mantenimiento de páginas y aplicaciones web</h3>
           </div>
         </div>

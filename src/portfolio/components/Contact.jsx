@@ -71,26 +71,32 @@ export const Contact = () => {
         <div className="sidebar">
           <h3>Háblame </h3>
           <div className="sidebar-card">
-            <i className="fas fa-envelope"></i>
+            <span>
+              <ion-icon name="mail-outline"></ion-icon>
+            </span>
             <p className="sidebar-card-title">Email</p>
             <p className="sidebar-card-info">aguszapata2000@gmail.com</p>
             <a
               href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlHCwfFqrKbHqBFQrcjZjvKPlglcNKThcGjHlznfRnVMglTQWNXcrdWGGxnRdVfxlDrLV"
               target="_blank"
             >
-              Escríbeme! <i className="fas fa-arrow-right"></i>
+              Escríbeme!
             </a>
           </div>
           <div className="sidebar-card">
-            <i className="fab fa-linkedin"></i>
+            <span>
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </span>
             <p className="sidebar-card-title">LinkedIn</p>
             <p className="sidebar-card-info">linkedin.com/in/wil3a8a36246/</p>
             <a href="https://www.linkedin.com/in/wil3a8a36246/" target="_blank">
-              Escríbeme! <i className="fas fa-arrow-right"></i>
+              Escríbeme!
             </a>
           </div>
           <div className="sidebar-card">
-            <i className="fab fa-facebook-messenger"></i>
+            <span>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </span>
             <p className="sidebar-card-title">Messenger</p>
             <p className="sidebar-card-info">
               facebook.com/wilfredo.zapata.7967
@@ -100,7 +106,7 @@ export const Contact = () => {
               target="_blank"
               referrer="noreferrer"
             >
-              Escríbeme! <i className="fas fa-arrow-right"></i>
+              Escríbeme!
             </a>
           </div>
         </div>
@@ -144,7 +150,6 @@ export const Contact = () => {
               required
             />
 
-            {/*//TODO: cambiar el color al enviar los datos */}
             <button className={valor} onClick={(e) => handleSubmit(e)}>
               {valor != "send" ? (
                 "Enviar"
