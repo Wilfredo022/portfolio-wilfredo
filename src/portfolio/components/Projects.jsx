@@ -1,3 +1,5 @@
+import { Project } from "./Project";
+
 export const Projects = () => {
   const data = [
     {
@@ -8,6 +10,15 @@ export const Projects = () => {
       web: "https://social-level.netlify.app",
       gitHub: null,
       tech: ["React", "Javascript", "Sass", "Firebase", "Redux"],
+    },
+    {
+      title: "Minicraft",
+      description:
+        "Mini juego de apilar cubos y hacer construcciones, parecido a minecraft, puedes apilar o eliminar cubos, ademas de guardar el progreso en la memoria del navegador o restaurar el plano sin cubos",
+      img: "./projects/minicraft.webp",
+      web: "https://minicraft.netlify.app/",
+      gitHub: null,
+      tech: ["React", "Javascript", "Css", "Three.js"],
     },
     {
       title: "Journal App",
@@ -29,51 +40,12 @@ export const Projects = () => {
     },
   ];
   return (
-    <div className="container-section animate__animated animate__slideInUp">
-      <h1 className="title">Proyectos</h1>
+    <div className='container-section animate__animated animate__slideInUp'>
+      <h1 className='title'>Proyectos</h1>
 
-      <div className="projects__container">
+      <div className='projects__container'>
         {data.map((project) => {
-          return (
-            <div key={project.title} className="projects__card">
-              {/* <div className="projects__card-title">
-                
-              </div> */}
-              <div className="projects__card-img">
-                <img src={project.img} alt={project.title} width="200px" />
-              </div>
-
-              <div className="projects__card-info">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-
-                <div className="projects__card-info-tech">
-                  {project.tech.map((t) => {
-                    return <span key={t}>{t}</span>;
-                  })}
-                </div>
-                <div className="projects__card-links">
-                  {project.web !== null && (
-                    <a href={project.web} target="_blank">
-                      <span>
-                        <ion-icon name="desktop-outline"></ion-icon>
-                      </span>
-                      Visitar
-                    </a>
-                  )}
-
-                  {project.gitHub !== null && (
-                    <a href={project.gitHub} target="_blank">
-                      <span>
-                        <ion-icon name="logo-github"></ion-icon>
-                      </span>
-                      GitHub
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          );
+          return <Project project={project} />;
         })}
       </div>
     </div>

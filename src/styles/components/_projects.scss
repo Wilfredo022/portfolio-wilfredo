@@ -12,7 +12,8 @@
   margin-bottom: 5rem;
 }
 .projects__card {
-  max-width: 300px;
+  position: relative;
+  max-width: 400px;
   width: 90%;
   background: $grey;
   margin-bottom: 0.5rem;
@@ -23,10 +24,30 @@
   align-items: center;
   border-radius: 5px;
 
-  .projects__card-title {
+  .card-title {
     width: 100%;
     color: $black2;
     padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .btn-card {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 0;
+      outline: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $blue;
+      color: $grey;
+      font-size: 1.1em;
+
+      &:hover {
+        background-color: $fuschia;
+      }
+    }
   }
   .projects__card-img {
     width: 100%;
@@ -74,8 +95,8 @@
 }
 
 .projects__card-links {
-  margin: 0.5rem 0;
-  width: 100%;
+  margin: 0.5rem auto;
+  width: 95%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -110,7 +131,6 @@
   .projects__card {
     width: 30%;
     max-width: none;
-    min-height: 435px;
 
     .projects__card-img {
       img {
