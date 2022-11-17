@@ -4,7 +4,6 @@ export const Project = ({ project }) => {
   const [show, setShow] = useState(false);
 
   const handleClick = () => {
-    console.log("shoow");
     setShow(!show);
   };
 
@@ -27,7 +26,9 @@ export const Project = ({ project }) => {
       {show && (
         <div
           className={
-            show ? "projects__card-info card-active" : "projects__card-info"
+            show
+              ? "projects__card-info card-active animate__animated animate__pulse"
+              : "projects__card-info"
           }
         >
           <p>{project.description}</p>

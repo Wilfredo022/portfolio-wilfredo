@@ -45,7 +45,7 @@ export const Projects = () => {
 
       <div className='projects__container'>
         {data.map((project) => {
-          return <Project project={project} />;
+          return <Project project={project} key={project.title} />;
         })}
       </div>
     </div>

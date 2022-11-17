@@ -23,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  transition: 0.4s;
 
   .card-title {
     width: 100%;
@@ -43,6 +44,7 @@
       background-color: $blue;
       color: $grey;
       font-size: 1.1em;
+      transition: 0.3s;
 
       &:hover {
         background-color: $fuschia;
@@ -63,6 +65,7 @@
   .projects__card-info {
     width: 100%;
     padding: 0.5rem;
+    transition: 0.3s;
 
     h3 {
       font-weight: 600px;
