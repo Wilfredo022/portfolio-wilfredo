@@ -138,8 +138,8 @@
 }
 @include tablet {
   .nav-container {
-    max-width: 600px;
-    padding: 0.9rem;
+    max-width: 550px;
+    padding: 0.5rem;
   }
 
   .container {
@@ -192,7 +192,7 @@
 }
 @include laptop-middle {
   .nav-container {
-    max-width: 450px;
+    max-width: 420px;
     padding: 0.4rem;
   }
 
