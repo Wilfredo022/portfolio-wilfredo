@@ -45,7 +45,7 @@ export const Home = () => {
         <div className='home__button-cv'>
           <button type=''>
             <a
-              href='https://drive.google.com/file/u/1/d/1qiI0QBdfK6LGmyMsqa5DnSbOzTeIjYvQ/view'
+              href='https://drive.google.com/file/d/1_zQHTjnVarBENeqIC2S2YfgfkD4QHxzi/view'
               target='_blank'
             >
               Resumen CV

@@ -10,7 +10,7 @@ export const Navbar = () => {
           </span>
         </NavLink>
 
-        <span className="modal">Inicio</span>
+     {/*    <span className="modal">Inicio</span> */}
       </div>
 
       <div className="container">
@@ -19,7 +19,7 @@ export const Navbar = () => {
             <ion-icon name="code-slash-outline"></ion-icon>
           </span>
         </NavLink>
-        <span className="modal">Habilidades</span>
+        {/* <span className="modal">Habilidades</span> */}
       </div>
 
       <div className="container">
@@ -28,7 +28,7 @@ export const Navbar = () => {
             <ion-icon name="briefcase-outline"></ion-icon>
           </span>
         </NavLink>
-        <span className="modal">Proyectos</span>
+       {/*  <span className="modal">Proyectos</span> */}
       </div>
 
       <div className="container">
@@ -37,7 +37,7 @@ export const Navbar = () => {
             <ion-icon name="shield-checkmark-outline"></ion-icon>
           </span>
         </NavLink>
-        <span className="modal">Servicios</span>
+        {/* <span className="modal">Servicios</span> */}
       </div>
 
       <div className="container">
@@ -46,7 +46,7 @@ export const Navbar = () => {
             <ion-icon name="mail-outline"></ion-icon>
           </span>
         </NavLink>
-        <span className="modal">Contacto</span>
+        {/* <span className="modal">Contacto</span> */}
       </div>
     </nav>
   );

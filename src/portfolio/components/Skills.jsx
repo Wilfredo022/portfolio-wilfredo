@@ -21,7 +21,11 @@ export const Skills = () => {
     },
     {
       skill: "Sass",
-      img: "./sass.png",
+      img: "./sass.svg",
+    },
+    {
+      skill: "Jquery",
+      img: "./jquery.svg",
     },
     {
       skill: "Bootstrap",
@@ -33,11 +37,15 @@ export const Skills = () => {
     },
     {
       skill: "Typescript",
-      img: "./ts.png",
+      img: "./typescript-icon.svg",
     },
     {
       skill: "React",
-      img: "./react.png",
+      img: "./react.svg",
+    },
+    {
+      skill: "Vue",
+      img: "./vue.svg",
     },
     {
       skill: "Redux",
@@ -56,7 +64,11 @@ export const Skills = () => {
   const backend = [
     {
       skill: "Node.js",
-      img: "./node.png",
+      img: "./nodejs.svg",
+    },
+    {
+      skill: "Python",
+      img: "./python.svg",
     },
     {
       skill: "Express.js",
@@ -78,7 +90,9 @@ export const Skills = () => {
               return (
                 <div className="section-skill" key={f.skill}>
                   <h4>{f.skill}</h4>
+                  <div className='section-skill-container-img'>
                   <img src={f.img} alt={f.skill} width="60px" />
+                  </div>
                 </div>
               );
             })}
@@ -92,7 +106,9 @@ export const Skills = () => {
               return (
                 <div className="section-skill" key={f.skill}>
                   <h4>{f.skill}</h4>
+                  <div className='section-skill-container-img'>
                   <img src={f.img} alt={f.skill} width="60px" />
+                  </div>
                 </div>
               );
             })}
